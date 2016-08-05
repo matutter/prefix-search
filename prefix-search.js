@@ -1,4 +1,4 @@
-function prefixSearch(prefix, words) {
+function search(prefix, words) {
   var len = words.length  
   var mi = -1  
   var ml = Number.MAX_SAFE_INTEGER
@@ -14,17 +14,17 @@ function prefixSearch(prefix, words) {
   return mi
 };
 
-function prefixSearchWord(prefix, words) {
+function searchWords(prefix, words) {
   var i = prefixSearch(prefix, words)
   return i == -1 ? -1 : words[i]
 };
 
-function prefixSearchObject(prefix, field, objects) {
+function searchObjects(prefix, field, objects) {
   var i = prefixSearch(prefix, objects.map(o=>o[field]))
   return i == -1 ? -1 : objects[i]
 }
 
-module.exports.prefixSearchObject = prefixSearchObject
-module.exports.prefixSearchWord = prefixSearchWord
-module.exports.prefixSearch = prefixSearch
+module.exports.objects = searchObjects
+module.exports.words = searchWords
+module.exports.search = search
 
