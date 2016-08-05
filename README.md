@@ -11,7 +11,7 @@ var docs = [{name: 'awesome'}, {name: 'awe! Kittens'}]
 var res = psearch.objects(searchTerm, 'name', 'name', docs)
 // res = {name, 'awesome'}; this string matched the most
 ```
-```ps.search``` returns the index of the best matching word. ```ps.words``` returns the string best matching the prefix.
+```ps.search``` returns the index of the best matching word. ```ps.words``` returns the string best matching the prefix, though ```-1``` is still returned when there is no match.
 
 ```javascript
 var words = ['aabb', 'abba']
