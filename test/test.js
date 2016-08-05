@@ -6,21 +6,21 @@ var objects = words.map(word => ({key:word}))
 
 describe('ps.prefixSearchWord on an array of string with atleast one match', ()=> {
   it('will return the shortest word, which is the most complete match', ()=> {
-    var res = ps.prefixSearchWord('pre', words)
+    var res = ps.words('pre', words)
     assert.equal(res, 'prefix')    
   })
 })
 
 describe('ps.prefixSearchWord on an array of string with no match', ()=> {
   it('will return -1', ()=> {
-    var res = ps.prefixSearchWord('nothing', words)
+    var res = ps.words('nothing', words)
     assert.equal(res, -1)    
   })
 })
 
 describe('ps.prefixSearchObject on an array of objects with a string property', ()=> {
   it('will return the object with the shortest matching string property', ()=> {
-    var res = ps.prefixSearchObject('sear', 'key', objects)
+    var res = ps.objects('sear', 'key', objects)
     assert.deepEqual(res, {key:'search'})    
   })
 })

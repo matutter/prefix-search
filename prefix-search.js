@@ -15,12 +15,12 @@ function search(prefix, words) {
 };
 
 function searchWords(prefix, words) {
-  var i = prefixSearch(prefix, words)
+  var i = search(prefix, words)
   return i == -1 ? -1 : words[i]
 };
 
 function searchObjects(prefix, field, objects) {
-  var i = prefixSearch(prefix, objects.map(o=>o[field]))
+  var i = search(prefix, objects.map(o=>o[field]))
   return i == -1 ? -1 : objects[i]
 }
 
