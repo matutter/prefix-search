@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/matutter/prefix-search/badge.svg?branch=master)](https://coveralls.io/github/matutter/prefix-search?branch=master) [![Build Status](https://travis-ci.org/matutter/prefix-search.svg?branch=master)](https://travis-ci.org/matutter/prefix-search)
+[![Coverage Status](https://coveralls.io/repos/github/matutter/prefix-search/badge.svg?branch=master)](https://coveralls.io/github/matutter/prefix-search?branch=master) [![Build Status](https://travis-ci.org/matutter/prefix-search.svg?branch=master)](https://travis-ci.org/matutter/prefix-search) [![dependencies Status](https://david-dm.org/matutter/prefix-search/status.svg)](https://david-dm.org/matutter/prefix-search)
 # prefix-search
 Prefix search finds the item in a list that has the longest matching prefix.
 
